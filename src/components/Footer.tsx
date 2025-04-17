@@ -1,6 +1,5 @@
-
 import React from "react";
-import { WashingMachine, Heart } from "lucide-react";
+import { WashingMachine, Heart, MapPin, Phone, Mail } from "lucide-react";
 
 const Footer = () => {
   return (

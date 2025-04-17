@@ -1,6 +1,6 @@
 
 import React from "react";
-import { Shirt, Iron, PackageCheck, Truck } from "lucide-react";
+import { Shirt, BadgeCheck, PackageCheck, Truck } from "lucide-react";
 
 const Service = ({ icon: Icon, title, description }: { icon: React.ElementType, title: string, description: string }) => {
   return (
@@ -33,7 +33,7 @@ const Services = () => {
           />
           
           <Service 
-            icon={Iron}
+            icon={BadgeCheck}
             title="Cuci & Setrika"
             description="Layanan lengkap termasuk mencuci, mengeringkan, dan menyetrika pakaian Anda."
           />
