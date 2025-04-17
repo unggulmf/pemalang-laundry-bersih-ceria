@@ -1,3 +1,4 @@
+
 import React from "react";
 import { WashingMachine, Heart, MapPin, Phone, Mail } from "lucide-react";
 
@@ -9,7 +10,7 @@ const Footer = () => {
           <div>
             <div className="flex items-center space-x-2 mb-6">
               <WashingMachine className="h-8 w-8 text-laundry-blue" />
-              <span className="text-xl font-bold text-white">Bersih Ceria</span>
+              <span className="text-xl font-bold text-white">TOP LAUNDRY PEMALANG</span>
             </div>
             <p className="text-gray-400 mb-6">
               Jasa laundry terpercaya di Pemalang dengan kualitas terbaik dan harga terjangkau. Kami memastikan pakaian Anda bersih, wangi, dan terawat.
@@ -61,16 +62,16 @@ const Footer = () => {
                 <a href="#harga" className="text-gray-400 hover:text-white transition-colors">Daftar Harga</a>
               </li>
               <li>
-                <a href="#" className="text-gray-400 hover:text-white transition-colors">Cara Pemesanan</a>
+                <a href="#cara-pemesanan" className="text-gray-400 hover:text-white transition-colors">Cara Pemesanan</a>
               </li>
               <li>
-                <a href="#" className="text-gray-400 hover:text-white transition-colors">Tentang Kami</a>
+                <a href="#tentang-kami" className="text-gray-400 hover:text-white transition-colors">Tentang Kami</a>
               </li>
               <li>
-                <a href="#" className="text-gray-400 hover:text-white transition-colors">Syarat & Ketentuan</a>
+                <a href="#syarat-ketentuan" className="text-gray-400 hover:text-white transition-colors">Syarat & Ketentuan</a>
               </li>
               <li>
-                <a href="#" className="text-gray-400 hover:text-white transition-colors">Kebijakan Privasi</a>
+                <a href="#kebijakan-privasi" className="text-gray-400 hover:text-white transition-colors">Kebijakan Privasi</a>
               </li>
             </ul>
           </div>
@@ -90,7 +91,7 @@ const Footer = () => {
               </li>
               <li className="flex items-center">
                 <Mail className="h-5 w-5 mr-3 text-gray-400" />
-                <span className="text-gray-400">info@bersihceria.com</span>
+                <span className="text-gray-400">info@toplaundry-pemalang.com</span>
               </li>
             </ul>
           </div>
@@ -99,7 +100,7 @@ const Footer = () => {
         <div className="border-t border-gray-800 pt-6">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <p className="text-gray-400 text-sm mb-4 md:mb-0">
-              &copy; {new Date().getFullYear()} Bersih Ceria Laundry. All rights reserved.
+              &copy; {new Date().getFullYear()} TOP LAUNDRY PEMALANG. All rights reserved.
             </p>
             <p className="text-gray-400 text-sm flex items-center">
               Made with <Heart className="h-4 w-4 mx-1 text-red-500" /> in Pemalang

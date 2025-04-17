@@ -9,7 +9,7 @@ const Navbar = () => {
       <div className="container mx-auto px-4 flex items-center justify-between">
         <div className="flex items-center space-x-2">
           <WashingMachine className="h-8 w-8 text-laundry-blue" />
-          <span className="text-xl font-bold text-laundry-blue-dark">Bersih Ceria</span>
+          <span className="text-xl font-bold text-laundry-blue-dark">TOP LAUNDRY PEMALANG</span>
         </div>
         <nav className="hidden md:flex items-center space-x-6">
           <a href="#layanan" className="text-gray-700 hover:text-laundry-blue transition-colors">

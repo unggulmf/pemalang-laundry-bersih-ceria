@@ -16,11 +16,11 @@ const Index = () => {
       <Navbar />
       <main>
         <Hero />
-        <Services />
-        <Pricing />
-        <Location />
-        <Testimonials />
-        <ContactCTA />
+        <Services id="layanan" />
+        <Pricing id="harga" />
+        <Location id="lokasi" />
+        <Testimonials id="testimoni" />
+        <ContactCTA id="kontak" />
       </main>
       <Footer />
       <WhatsAppFloat />

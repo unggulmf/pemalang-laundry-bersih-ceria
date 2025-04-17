@@ -1,4 +1,3 @@
-
 import React from "react";
 import { WashingMachine, Star, Shirt, Clock } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -10,7 +9,7 @@ const Hero = () => {
         <div className="container mx-auto px-4 flex flex-col md:flex-row items-center">
           <div className="w-full md:w-1/2 text-white mb-12 md:mb-0 animate-fade-in">
             <h1 className="text-4xl md:text-5xl font-bold mb-4 text-shadow-lg">
-              Bersih Ceria Laundry
+              TOP LAUNDRY PEMALANG
             </h1>
             <h2 className="text-2xl md:text-3xl font-medium mb-6 text-shadow">
               Solusi Laundry Terbaik di Pemalang
