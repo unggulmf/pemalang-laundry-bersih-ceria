@@ -3,9 +3,13 @@ import React from "react";
 import { Phone, Mail, MapPin, Clock } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
-const ContactCTA = () => {
+interface ContactCTAProps {
+  id?: string;
+}
+
+const ContactCTA: React.FC<ContactCTAProps> = ({ id }) => {
   return (
-    <section id="kontak" className="py-20 bg-laundry-blue">
+    <section id={id} className="py-20 bg-laundry-blue">
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div className="text-white">
@@ -19,7 +23,9 @@ const ContactCTA = () => {
                 <Phone className="h-6 w-6 mr-4 flex-shrink-0" />
                 <div>
                   <h3 className="font-bold text-xl mb-1">Telepon</h3>
-                  <p className="text-white/90">0823-1406-6667</p>
+                  <p className="text-white/90">
+                    <a href="tel:082314066667" className="hover:underline">0823-1406-6667</a>
+                  </p>
                 </div>
               </div>
               
@@ -27,7 +33,9 @@ const ContactCTA = () => {
                 <Mail className="h-6 w-6 mr-4 flex-shrink-0" />
                 <div>
                   <h3 className="font-bold text-xl mb-1">Email</h3>
-                  <p className="text-white/90">info@bersihceria.com</p>
+                  <p className="text-white/90">
+                    <a href="mailto:info@toplaundry-pemalang.com" className="hover:underline">info@toplaundry-pemalang.com</a>
+                  </p>
                 </div>
               </div>
               
@@ -36,7 +44,9 @@ const ContactCTA = () => {
                 <div>
                   <h3 className="font-bold text-xl mb-1">Alamat</h3>
                   <p className="text-white/90">
-                    Jl. Jend. Sudirman Tim. No.370 A, Mlaki, Wanarejan Utara, Kec. Taman, Kabupaten Pemalang, Jawa Tengah 52361
+                    <a href="https://maps.app.goo.gl/5Gy8fSNAxwmztECx9" target="_blank" rel="noopener noreferrer" className="hover:underline">
+                      Jl. Jend. Sudirman Tim. No.370 A, Mlaki, Wanarejan Utara, Kec. Taman, Kabupaten Pemalang, Jawa Tengah 52361
+                    </a>
                   </p>
                 </div>
               </div>
@@ -55,7 +65,7 @@ const ContactCTA = () => {
           <div className="bg-white p-8 rounded-lg shadow-lg">
             <h3 className="text-2xl font-bold mb-6 text-laundry-blue-dark">Kirim Pesan</h3>
             
-            <form className="space-y-6">
+            <form className="space-y-6" onSubmit={(e) => e.preventDefault()}>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div>
                   <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-1">

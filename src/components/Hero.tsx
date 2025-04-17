@@ -1,3 +1,4 @@
+
 import React from "react";
 import { WashingMachine, Star, Shirt, Clock } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -18,10 +19,17 @@ const Hero = () => {
               Kami menawarkan layanan laundry berkualitas dengan harga terjangkau. Pakaian Anda akan bersih, wangi, dan terawat dengan baik.
             </p>
             <div className="flex space-x-4">
-              <Button className="bg-laundry-orange hover:bg-laundry-orange/90 text-white px-6 py-2">
+              <Button 
+                className="bg-laundry-orange hover:bg-laundry-orange/90 text-white px-6 py-2"
+                onClick={() => window.location.href = "#kontak"}
+              >
                 Pesan Sekarang
               </Button>
-              <Button variant="outline" className="bg-white text-laundry-blue hover:bg-white/90 border-white px-6 py-2">
+              <Button 
+                variant="outline" 
+                className="bg-white text-laundry-blue hover:bg-white/90 border-white px-6 py-2"
+                onClick={() => window.location.href = "#layanan"}
+              >
                 Layanan Kami
               </Button>
             </div>
