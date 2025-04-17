@@ -1,6 +1,6 @@
 
 import React from "react";
-import { Phone, Mail, MapPin, Clock } from "lucide-react";
+import { MessageCircle, Mail, MapPin, Clock } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 interface ContactCTAProps {
@@ -8,6 +8,10 @@ interface ContactCTAProps {
 }
 
 const ContactCTA: React.FC<ContactCTAProps> = ({ id }) => {
+  const handleWhatsAppClick = () => {
+    window.open("https://wa.me/6282314066667", "_blank");
+  };
+
   return (
     <section id={id} className="py-20 bg-laundry-blue">
       <div className="container mx-auto px-4">
@@ -20,11 +24,11 @@ const ContactCTA: React.FC<ContactCTAProps> = ({ id }) => {
             
             <div className="space-y-6">
               <div className="flex items-start">
-                <Phone className="h-6 w-6 mr-4 flex-shrink-0" />
+                <MessageCircle className="h-6 w-6 mr-4 flex-shrink-0" />
                 <div>
-                  <h3 className="font-bold text-xl mb-1">Telepon</h3>
+                  <h3 className="font-bold text-xl mb-1">WhatsApp</h3>
                   <p className="text-white/90">
-                    <a href="tel:082314066667" className="hover:underline">0823-1406-6667</a>
+                    <a href="https://wa.me/6282314066667" target="_blank" rel="noopener noreferrer" className="hover:underline">0823-1406-6667</a>
                   </p>
                 </div>
               </div>
@@ -128,9 +132,19 @@ const ContactCTA: React.FC<ContactCTAProps> = ({ id }) => {
                 ></textarea>
               </div>
               
-              <Button type="submit" className="w-full bg-laundry-orange hover:bg-laundry-orange/90">
-                Kirim Pesan
-              </Button>
+              <div className="flex flex-col md:flex-row gap-4">
+                <Button type="submit" className="flex-1 bg-laundry-orange hover:bg-laundry-orange/90">
+                  Kirim Pesan
+                </Button>
+                <Button 
+                  type="button"
+                  onClick={handleWhatsAppClick} 
+                  className="flex-1 bg-green-500 hover:bg-green-600"
+                >
+                  <MessageCircle className="h-4 w-4 mr-2" />
+                  Chat di WhatsApp
+                </Button>
+              </div>
             </form>
           </div>
         </div>

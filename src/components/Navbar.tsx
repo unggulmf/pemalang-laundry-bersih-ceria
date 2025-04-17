@@ -1,11 +1,15 @@
 
 import React, { useState } from "react";
-import { WashingMachine, Phone, Menu, X } from "lucide-react";
+import { WashingMachine, MessageCircle, Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
+  
+  const handleWhatsAppClick = () => {
+    window.open("https://wa.me/6282314066667", "_blank");
+  };
 
   return (
     <header className="w-full bg-white py-4 shadow-sm fixed top-0 left-0 right-0 z-50">
@@ -35,9 +39,9 @@ const Navbar = () => {
         
         <Button 
           className="hidden md:flex bg-laundry-orange hover:bg-laundry-orange/90"
-          onClick={() => window.location.href = "tel:082314066667"}
+          onClick={handleWhatsAppClick}
         >
-          <Phone className="h-4 w-4 mr-2" /> 
+          <MessageCircle className="h-4 w-4 mr-2" /> 
           Hubungi Kami
         </Button>
         
@@ -96,11 +100,11 @@ const Navbar = () => {
                 <Button 
                   className="w-full bg-laundry-orange hover:bg-laundry-orange/90"
                   onClick={() => {
-                    window.location.href = "tel:082314066667";
+                    window.open("https://wa.me/6282314066667", "_blank");
                     setOpen(false);
                   }}
                 >
-                  <Phone className="h-4 w-4 mr-2" /> 
+                  <MessageCircle className="h-4 w-4 mr-2" /> 
                   Hubungi Kami
                 </Button>
               </div>

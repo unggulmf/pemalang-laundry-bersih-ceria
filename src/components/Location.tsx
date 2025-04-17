@@ -1,6 +1,6 @@
 
 import React from "react";
-import { MapPin, Navigation, Clock, Phone } from "lucide-react";
+import { MapPin, Navigation, Clock, MessageCircle } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 interface LocationProps {
@@ -9,11 +9,11 @@ interface LocationProps {
 
 const Location: React.FC<LocationProps> = ({ id }) => {
   const handleDirectionsClick = () => {
-    window.open("https://goo.gl/maps/QPAojM9QGFnCdJUe9", "_blank");
+    window.open("https://maps.app.goo.gl/5Gy8fSNAxwmztECx9", "_blank");
   };
 
-  const handleCallClick = () => {
-    window.location.href = "tel:082314066667";
+  const handleWhatsAppClick = () => {
+    window.open("https://wa.me/6282314066667", "_blank");
   };
 
   return (
@@ -83,20 +83,20 @@ const Location: React.FC<LocationProps> = ({ id }) => {
                 </div>
 
                 <div className="flex items-start">
-                  <Phone className="h-6 w-6 mr-4 text-laundry-blue-dark flex-shrink-0" />
+                  <MessageCircle className="h-6 w-6 mr-4 text-laundry-blue-dark flex-shrink-0" />
                   <div>
                     <h3 className="font-bold text-xl text-laundry-blue-dark mb-1">
                       Hubungi Kami
                     </h3>
                     <p className="text-gray-700 mb-2">
-                      Telepon: 082314066667
+                      WhatsApp: 082314066667
                     </p>
                     <Button 
-                      onClick={handleCallClick}
+                      onClick={handleWhatsAppClick}
                       className="bg-laundry-orange hover:bg-laundry-orange/90 w-full"
                     >
-                      <Phone className="h-4 w-4 mr-2" />
-                      Hubungi Sekarang
+                      <MessageCircle className="h-4 w-4 mr-2" />
+                      Chat di WhatsApp
                     </Button>
                   </div>
                 </div>
