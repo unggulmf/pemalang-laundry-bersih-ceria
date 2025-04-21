@@ -7,7 +7,7 @@ import { motion } from "framer-motion";
 const Hero = () => {
   return (
     <div className="relative min-h-screen pt-20 flex flex-col">
-      <div className="bg-gradient-to-r from-laundry-blue-dark to-laundry-blue py-16 flex-grow">
+      <div className="bg-gradient-to-r from-laundry-blue-dark to-laundry-blue pl-14 py-16 flex-grow">
         <div className="container mx-auto px-4 flex flex-col md:flex-row items-center">
           <motion.div 
             initial={{ opacity: 0, y: 20 }}
